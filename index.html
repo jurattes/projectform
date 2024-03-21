@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project 2 </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="signup" action="" method="post">
+            <h1> Sign Up </h1>
+            <div class= "input">
+                <label for="name">Name:</label>
+                <input type="text" id="name"placeholder= "Enter your full name" name="name" class = 'form-control'>
+                <div class="error"></div>
+            </div>
+            <div class= "input">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder= "Enter your email address" class = 'form-control'> 
+                <div class="error"></div>            
+            </div>
+            <div class= "input">
+                <label for="PasswordInput">Password:</label>
+                    <input type="password" id="PasswordInput" placeholder= "Enter your password" class = 'form-control'><br>
+                    <label class="togglePassword">
+                        <input type="checkbox" id="ToggleVisibility">
+                        <img src="eye.svg" id="image1" alt="">
+                    </label>
+                    <div class="error"></div>
+            </div>            
+            <div class= "input">
+                <label id="RetypeLabel" for="RetypePasswordInput"> Retype Password:</label>
+                    <input  type="password" id= "RetypePasswordInput" placeholder= "Re-enter your password" class = 'form-control'>
+                    <label class="togglePassword">
+                        <input type="checkbox" id="ToggleVisibility2">
+                        <img src="eye.svg" id="image2" alt="">
+                    </label>
+                    <div class= "error"> </div>                                      
+            </div>           
+            <div class= "input">
+                <label id="postalLabel" for="postal">Postal Code</label>
+                <input type= "text" id= "postal" placeholder= "eg - H7E 1PT" class = 'form-control'>
+                <div class="error"></div>
+            </div>
+            <div class= "input">
+                <label for="city">Select your city</label>
+                <button type="button" id="remove" class = "btnRemove" onclick="removecity()">Remove city</button><br>
+                <select name="" id="city" class = "form-control">
+                    <option value="select">Select City</option>
+                    <option value="NewYork">New York City</option>
+                    <option value="Montreal">Montreal</option>
+                    <option value="Laval">Laval</option>
+                    <option value="Longueil">Longueil</option>
+                    <option value="Brossard">Brossard</option>
+                    <option value="Lachine">Lachine</option>
+                </select>
+                <div class="error"></div>
+            </div>
+            <div class= "input">
+                <button type="submit" formnovalidate class = "btnSubmit"> Subscribe </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
